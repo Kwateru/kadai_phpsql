@@ -3,6 +3,7 @@
     include './dbConnection.php';
     // include dirname(__FILE__) . '/select.php';
     include './select.php';
+    include './insert.php';
     // echo 'Webサーバーが起動しています！';
 ?>
 
@@ -20,8 +21,8 @@
         <div class="memo_area">
             <div class="memo_form">
                 <h2>メモを追加</h2>
-                <form action="">
-                    <input class="memo_text" type="text" name="" id="">
+                <form method="post" action="index.php">
+                    <input class="memo_text" type="text" name="body">
                     <input type="submit" value="追加">
                 </form>
             </div>
