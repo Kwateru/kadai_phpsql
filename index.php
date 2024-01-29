@@ -5,6 +5,8 @@
     include './select.php';
     include './insert.php';
     include './delete.php';
+    include './edit.php';
+    include './update.php';
     // echo 'Webサーバーが起動しています！';
 ?>
 
@@ -36,7 +38,8 @@
                     </div>
                     <div class="btn_area">
                         <div class="edit_form">
-                            <form action="">
+                            <form action="edit.php" method="post">
+                                <input type="hidden" name="edit_id" value="<?php echo $memo['id'] ?>">
                                 <input type="submit" value="編集">
                                 </form>
                                 </div>
