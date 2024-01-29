@@ -4,6 +4,7 @@
     // include dirname(__FILE__) . '/select.php';
     include './select.php';
     include './insert.php';
+    include './delete.php';
     // echo 'Webサーバーが起動しています！';
 ?>
 
@@ -40,7 +41,8 @@
                                 </form>
                                 </div>
                                 <div class="del_area">
-                                    <form action="">
+                                    <form method="post" action="index.php">
+                                        <input type="hidden" name="delete_id" value="<?php echo $memo['id'] ?>">
                                         <input type="submit" value="削除">
                                         </form>
                                 </div>
