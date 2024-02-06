@@ -5,7 +5,6 @@
     include './select.php';
     include './insert.php';
     include './delete.php';
-    include './edit.php';
     include './update.php';
     // echo 'Webサーバーが起動しています！';
 ?>
@@ -27,6 +26,13 @@
                 <form method="post" action="index.php">
                     <input class="memo_text" type="text" name="body">
                     <input type="submit" value="追加">
+                </form>
+                
+                <!--検索機能-->
+                <h2>メモ検索</h2>
+                <form method="post" action="index.php">
+                    <input class="memo_text" type="text" name="search_keyword">
+                    <input type="submit" value="検索">
                 </form>
             </div>
             <div class="memo_show">

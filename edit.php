@@ -29,7 +29,7 @@ if (isset($_POST["edit_id"])) {
         <input class="memo_text" 
 　　　　　　type="text" name="edit_body" value="<?php echo $memo_info['body'] ?>">
         <input class="memo_id" 
-　　　　　　type="hidden" name="memo_id" value="<?php echo $memo_info['id'] ?>">
+            type="hidden" name="memo_id" value="<?php echo $memo_info['id'] ?>">
         <input type="submit" value="追加">
     </form>
 </div>
