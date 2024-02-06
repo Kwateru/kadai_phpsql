@@ -34,6 +34,13 @@
                     <input class="memo_text" type="text" name="search_keyword">
                     <input type="submit" value="検索">
                 </form>
+                
+                <!--一括削除-->
+                <h2>一括削除</h2>
+                <form method="post" action="delete_all.php">
+                    <input type="submit" value="一括削除" onclick="return confirm('本当にすべてのメモを削除しますか？');">
+                </form>
+                
             </div>
             <div class="memo_show">
                 <?php foreach($memo_list as $memo): ?>
